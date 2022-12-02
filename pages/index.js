@@ -2,6 +2,7 @@ export default function Home({ data }) {
   const { products } = data;
   return (
     <div className="container mx-auto">
+      <h1 className="text-center">Hola mundo - Ant-Finance</h1>
       <div className="grid  grid-cols-12 gap-2">
         {products.map(({ id, price, brand, category }) => (
           <div className="col-span-3 bg-white shadow border min-h-[3rem]" key={id}>
